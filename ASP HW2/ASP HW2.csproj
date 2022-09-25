@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>ASP_HW2</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\uploads\345uitng.jpg" />
+    <Content Remove="wwwroot\uploads\awtgaxtx.jpg" />
+    <Content Remove="wwwroot\uploads\bibyfyq0.jpg" />
+    <Content Remove="wwwroot\uploads\cuvnvu3r.jpg" />
+    <Content Remove="wwwroot\uploads\default.jpg" />
+    <Content Remove="wwwroot\uploads\e5vk2q3d.jpg" />
+    <Content Remove="wwwroot\uploads\gcwdw32g.jpg" />
+    <Content Remove="wwwroot\uploads\gk5tvx4a.jpg" />
+    <Content Remove="wwwroot\uploads\ibwf31ku.jpg" />
+    <Content Remove="wwwroot\uploads\m1y4msrv.jpg" />
+    <Content Remove="wwwroot\uploads\ohw4qsmt.jpeg" />
+    <Content Remove="wwwroot\uploads\rmhmmmb3.jpg" />
+    <Content Remove="wwwroot\uploads\rxc4smqw.jpg" />
+    <Content Remove="wwwroot\uploads\test.jpeg" />
+    <Content Remove="wwwroot\uploads\tixxwonu.jpg" />
+    <Content Remove="wwwroot\uploads\tsll4kq4.jpg" />
+    <Content Remove="wwwroot\uploads\wb1f5nwx.jpg" />
+    <Content Remove="wwwroot\uploads\xhvxrorv.jpg" />
+    <Content Remove="wwwroot\uploads\yykk1uv0.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\uploads\default.jpg" />
+  </ItemGroup>
+
+</Project>

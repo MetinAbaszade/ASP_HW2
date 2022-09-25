@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ASP_HW2.Entitities.Person>
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<div class="ms-5 pt-2 mt-4">
+
+	<h1>Index</h1>
+
+	<p>
+		<a asp-controller="Person" asp-action="Create">Add Person</a>
+	</p>
+
+	<table class="table w-75">
+		<thead>
+			<tr>
+				<th>
+					@Html.DisplayNameFor(model => model.Image)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Id)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Name)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Surname)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Age)
+				</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td style="width: 200px">
+						<img src="../@item.Image" style="height: 100px; width: 100px; object-fit: cover; border-radius: 50%;"></img>
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Id)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Name)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Surname)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Age)
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
